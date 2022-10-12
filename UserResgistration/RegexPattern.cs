@@ -64,5 +64,23 @@ namespace UserResgistration
                 }
             }
         }
+
+        public static void PhoneNumber()
+        {
+            string[] arr = { "919876234523", "856947235642", "8569472315", "1235" };
+            string pattern = @"^[91][0-9]{10}";
+
+            foreach (string input in arr)
+            {
+                if (Regex.IsMatch(input, pattern))
+                {
+                    Console.WriteLine("{0} is valid", input);
+                }
+                else
+                {
+                    Console.WriteLine("{0} is Invalid", input);
+                }
+            }
+        }
     }
 }
