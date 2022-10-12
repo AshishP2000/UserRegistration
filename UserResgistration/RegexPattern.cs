@@ -29,5 +29,23 @@ namespace UserResgistration
                 }
             }
         }
+
+        public static void LastName()
+        {
+            string[] arr = { "Patil", "patil", "pa23", "PAtil334" };
+            string pattern = "^[A-Z][a-z]{3}";
+
+            foreach (string input in arr)
+            {
+                if (Regex.IsMatch(input, pattern))
+                {
+                    Console.WriteLine("{0} is valid", input);
+                }
+                else
+                {
+                    Console.WriteLine("{0} is Invalid", input);
+                }
+            }
+        }
     }
 }

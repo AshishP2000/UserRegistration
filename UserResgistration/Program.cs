@@ -12,7 +12,7 @@ namespace UserResgistration
         {
             Console.WriteLine("Welcome to User Registration!...");
 
-            RegexPattern.FirstName();
+            RegexPattern.LastName();
             Console.ReadLine();
         }
     }
