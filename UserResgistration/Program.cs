@@ -10,9 +10,10 @@ namespace UserResgistration
     {
         static void Main(string[] args)
         {
+            //UC-3 Validate Email
             Console.WriteLine("Welcome to User Registration!...");
 
-            RegexPattern.LastName();
+            RegexPattern.Email();
             Console.ReadLine();
         }
     }

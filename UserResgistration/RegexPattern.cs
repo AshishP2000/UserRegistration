@@ -9,7 +9,6 @@ namespace UserResgistration
 {
     public class RegexPattern
     {
-        //UC-1 As a user need to enter valid First name
         
 
         public static void FirstName()
@@ -34,6 +33,24 @@ namespace UserResgistration
         {
             string[] arr = { "Patil", "patil", "pa23", "PAtil334" };
             string pattern = "^[A-Z][a-z]{3}";
+
+            foreach (string input in arr)
+            {
+                if (Regex.IsMatch(input, pattern))
+                {
+                    Console.WriteLine("{0} is valid", input);
+                }
+                else
+                {
+                    Console.WriteLine("{0} is Invalid", input);
+                }
+            }
+        }
+
+        public static void Email()
+        {
+            string[] arr = { "ashish2000patil@gmail.com", "Ashishpatil", "ashish.come", "ashish2000patil@gmail" };
+            string pattern = @"^[a-z0-9_\-\.]+[@][a-z]+[\.][a-z]{2,3}";
 
             foreach (string input in arr)
             {
