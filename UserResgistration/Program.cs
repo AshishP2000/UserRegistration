@@ -10,10 +10,10 @@ namespace UserResgistration
     {
         static void Main(string[] args)
         {
-            //UC-4 Validate Phone Number
+            //UC-5 Rule 1 Minumum 8 Characters
             Console.WriteLine("Welcome to User Registration!...");
 
-            RegexPattern.PhoneNumber();
+            RegexPattern.Password();
             Console.ReadLine();
         }
     }

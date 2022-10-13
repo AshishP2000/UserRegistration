@@ -9,8 +9,6 @@ namespace UserResgistration
 {
     public class RegexPattern
     {
-        
-
         public static void FirstName()
         {
             string[] arr = { "Ashish", "ashish", "as23", "AShish334" };
@@ -67,8 +65,26 @@ namespace UserResgistration
 
         public static void PhoneNumber()
         {
-            string[] arr = { "919876234523", "856947235642", "8569472315", "1235" };
-            string pattern = @"^[91][0-9]{10}";
+            string[] arr = { "91 9876234523", "85 6947235642", "8569472315", "1235" };
+            string pattern = @"^[91\s]*[0-9]{10}";
+
+            foreach (string input in arr)
+            {
+                if (Regex.IsMatch(input, pattern))
+                {
+                    Console.WriteLine("{0} is valid", input);
+                }
+                else
+                {
+                    Console.WriteLine("{0} is Invalid", input);
+                }
+            }
+        }
+
+        public static void Password()
+        {
+            string[] arr = {"ashish231", "ashish", "1256123", "1235"};
+            string pattern = @"^[a-zA-Z0-9]{8,}";
 
             foreach (string input in arr)
             {
