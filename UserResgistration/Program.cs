@@ -10,7 +10,7 @@ namespace UserResgistration
     {
         static void Main(string[] args)
         {
-            //UC-5 Rule 1 Minumum 8 Characters
+            //UC-6 Rule 2 should have atleast 1 uppercase
             Console.WriteLine("Welcome to User Registration!...");
 
             RegexPattern.Password();

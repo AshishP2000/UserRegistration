@@ -83,8 +83,8 @@ namespace UserResgistration
 
         public static void Password()
         {
-            string[] arr = {"ashish231", "ashish", "1256123", "1235"};
-            string pattern = @"^[a-zA-Z0-9]{8,}";
+            string[] arr = {"Ashish231", "ashish", "1256123", "1235"};
+            string pattern = @"^[A-Z]{1}[a-z0-9]{7,}";
 
             foreach (string input in arr)
             {
