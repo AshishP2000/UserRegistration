@@ -10,7 +10,7 @@ namespace UserResgistration
     {
         static void Main(string[] args)
         {
-            //UC-7 Rule 3 should have atleast 1 numeric number
+            //UC-8 Rule 4 should have atleast 1 special character
             Console.WriteLine("Welcome to User Registration!...");
 
             RegexPattern.Password();
